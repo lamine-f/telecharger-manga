@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/cssdocs/style.css">
+    <title>Download manga</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <td><label for="mangaChoice">Choisir un manga </label></td>
+          <td>
+            <select name="mangaChoice" id="choice">
+              <option value="" disabled selected>Choisir un manga</option>
+              <option value="1">Manga 1</option>
+              <option value="2">Manga 2</option>
+              <option value="3">Manga 3</option>
+              <!-- Ajoutez d'autres options de manga ici -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="first">Premier chapitre </label></td>
+          <td><input type="number" value="1" id="first"></td>
+        </tr>
+        <tr>
+          <td><label for="last">Dernier chapitre </label></td>
+          <td><input type="number" value="3" id="last"></td>
+        </tr>
+      </table>
+      <input type="submit" value="Télécharger" id="submitButton">
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./src/jsdocs/app.js"></script>
+<script src="./src/jsdocs/front.js"></script>
+
+</html>
